@@ -18,4 +18,11 @@ public class TennisGameTest {
 		assertEquals(tennisGame.getScore(), "fifteen-love");
 	}
 	
+	@Test
+	public void ifTheReceiverMakesTheFirstPoint() {
+		TennisGame tennisGame = new TennisGame();
+		tennisGame.receiverScored();
+		assertEquals(tennisGame.getScore(), "love-fifteen");
+	}
+	
 }
