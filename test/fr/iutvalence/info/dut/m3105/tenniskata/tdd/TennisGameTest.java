@@ -14,7 +14,8 @@ public class TennisGameTest {
 	@Test
 	public void ifTheServerMakesTheFirstPoint() {
 		TennisGame tennisGame = new TennisGame();
-		assertEquals(tennisGame.getScore(), "15-0");
+		tennisGame.serverScored();
+		assertEquals(tennisGame.getScore(), "fifteen-love");
 	}
 	
 }
